@@ -1,4 +1,4 @@
-﻿/*
+/*
  * QUANTCONNECT.COM - Democratizing Finance, Empowering Individuals.
  * Lean Algorithmic Trading Engine v2.0. Copyright 2014 QuantConnect Corporation.
  *
@@ -132,22 +132,22 @@ namespace QuantConnect.Packets
         public int PersistenceIntervalSeconds;
 
         /// <summary>
-        /// Gets list of streaming data types permissions
+        /// Gets list of alternative data types permissions
         /// </summary>
-        [JsonProperty(PropertyName = "streamingDataPermissions")]
-        public HashSet<string> StreamingDataPermissions;
+        [JsonProperty(PropertyName = "alternativeDataPermissions")]
+        public HashSet<string> AlternativeDataPermissions;
 
         /// <summary>
-        /// Gets list of streaming security types permissions
+        /// Gets list of security types data permissions
         /// </summary>
-        [JsonProperty(PropertyName = "streamingSecurityTypePermissions")]
-        public HashSet<SecurityType> StreamingSecurityTypePermissions;
+        [JsonProperty(PropertyName = "securityTypeDataPermissions")]
+        public HashSet<SecurityType> SecurityTypeDataPermissions;
 
         /// <summary>
         /// Gets list of allowed data resolutions
         /// </summary>
-        [JsonProperty(PropertyName = "dataResolutionPermissions")]
-        public HashSet<Resolution> DataResolutionPermissions;
+        [JsonProperty(PropertyName = "resolutionDataPermissions")]
+        public HashSet<Resolution> ResolutionDataPermissions;
 
         /// <summary>
         /// The cost associated with running this job
